@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #808080; /* Neutral gray background */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator-container {
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.calculator {
+    width: 400px; /* Wider to accommodate new buttons */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#history {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: right;
+    border: none;
+    background-color: #f0f0f0;
+    color: #888;
+    box-sizing: border-box;
+    outline: none;
+    height: 40px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 40px;
+    text-align: right;
+    border: none;
+    background-color: #ffffff; /* White display */
+    color: #000000; /* Black text */
+    box-sizing: border-box;
+    outline: none;
+    height: 70px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns for new layout */
+    gap: 2px; /* Small gap between buttons */
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #45b39d; /* Teal button color */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #52c7b1; /* Lighter teal on hover */
+}
+
+.btn:active {
+    background-color: #3a9a85; /* Darker teal when pressed */
+}
+
+.btn-advanced {
+    background-color: #3a9a85; /* Darker teal for advanced functions */
+}
+
+.btn-advanced:hover {
+    background-color: #45b39d;
+}
+
+.colspan-2 {
+    grid-column: span 2;
+}
+
+.rowspan-2 {
+    grid-row: span 2;
+}
